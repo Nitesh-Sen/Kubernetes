@@ -85,6 +85,7 @@ Now describe your wordpress service. which is the loadbalancer. Take dns name an
 kubectl describe svc wordpress-svc
 ```
 > NOTE: If your loadbalancer dns is not working. Remember it this is not any error of security group or any other. Refresh the page many time that will work after some tries. 
+
 And lastly describe mysql pod for get the ip of mysql.
 ```
 kubectl describe pod mysql | grep "IP:        "

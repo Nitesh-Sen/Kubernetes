@@ -59,6 +59,7 @@ vim mysql.yml
 kubectl apply -f mysql.yml
 ```
 > check your pod has created successfully. 
+  
 After mysql create wordpress.yml file and add this [contenct](https://github.com/Nitesh-Sen/Kubernetes/blob/80e4ce25bab2c1fc566d327e384bf01fd870930a/Wordpress-on-eks-with-EBS%26CLB/wp.yml).
 ```
 vim wp.yml

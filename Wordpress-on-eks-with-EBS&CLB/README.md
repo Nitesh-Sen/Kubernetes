@@ -34,6 +34,9 @@ kubectl apply -f pvc.yml
 ```
 kubectl get pvc
 ```
+## Create role for eks to create the ebs volume and connect with volume privately.
+
+  
 - Follow there command to do this and this is also available on this [link](https://stackoverflow.com/questions/75758115/persistentvolumeclaim-is-stuck-waiting-for-a-volume-to-be-created-either-by-ex).
 ```
 eksctl utils associate-iam-oidc-provider --region=<CLUSTER_REGION> --cluster=<CLUSTER_NAME> --approve
@@ -51,6 +54,8 @@ kubectl get pvc
 ```
 kubectl get pv
 ```
+  
+## Creating pods and launch the website with the presistent volume.
 - Now create mysql.yml file and add this [content](https://github.com/Nitesh-Sen/Kubernetes/blob/80e4ce25bab2c1fc566d327e384bf01fd870930a/Wordpress-on-eks-with-EBS%26CLB/mysql.yml). Then apply this.
 ```
 vim mysql.yml
